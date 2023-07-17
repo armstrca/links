@@ -8,25 +8,53 @@
     body {
       background-color: #e5e5f7;
       opacity: 0.8;
-      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 75px ), repeating-linear-gradient( #ccffff55, #ccffff );
-      padding-top: 40px;
-      padding-bottom: 24%;
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 75px), repeating-linear-gradient( #ccffff55, #ccffff );
+      background-origin: content-box;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       font-family: Tahoma, sans-serif;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
     }
+
     .items {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      max-width: 400px;
-      flex-grow: 1;
+       max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex-grow: 1;
+        margin-top: 40px;
+     }
+
+    @media only screen and (max-width: 1200px) {
+      body {
+        overflow: hidden;
+      }
+
+      .items {
+        max-width: 55%;
+        max-height: fit-content;
+        transform: scale(1.5);
+        transform-origin: top; 
+        overflow: hidden;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .items > * {
+        margin-bottom: 30px;
+      }
     }
+
     .name {
       color: rgba(235,26,235,0.45);
       display: flex;
       justify-content: center;
-      font-size: xx-large;
+      font-size: 47px;
       font-weight: bold;
       font-family: 'Ruda', sans-serif;
       text-shadow: #ffd803 5px 5px 4px;
@@ -97,7 +125,7 @@
     <a href="https://homestarrunner.com/sbemails/26-cgnu" target="_blank"><img src="/Thumbnails/mantis.jpg" alt="Calvin Armstrong headshot" class="banner-image"></a>
   </div>
 
-  <div class="name">Calvin Armstrongg!
+  <div class="name">Calvin Armstrong!
   </div>
 
   <div class="social-icons">
