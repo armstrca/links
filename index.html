@@ -1,68 +1,113 @@
 <!DOCTYPE html>
 <head>
+  <!-- Font download -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+  <!-- Connect Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
   <style>
     body {
+      background-color: #e5e5f7;
+      opacity: 0.8;
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 75px ), repeating-linear-gradient( #ccffff55, #ccffff );
       padding-top: 40px;
-      padding-bottom: 40px;
-      background-color: #e3f6f5;
+      padding-bottom: 24%;
+      display: flex;
+      justify-content: center;
+      font-family: Tahoma, sans-serif;
     }
     .items {
       display: flex;
       flex-direction: column;
       gap: 30px;
-      max-width: 600px;
-      align-items: center;
-      text-align: center;
+      max-width: 400px;
+      flex-grow: 1;
     }
     .name {
+      color: rgba(235,26,235,0.45);
+      display: flex;
+      justify-content: center;
+      font-size: xxx-large;
+      font-weight: bold;
+      font-family: 'Ruda', sans-serif;
+      text-shadow: #ffd803 5px 5px 4px;
+    }
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+    .social-icons {
       color: #272343;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      
     }
     .social-icons a {
-      color: #272343;
       text-decoration: none;
+      color:#28c4c4;
+      background-color: #ffd803;
+      padding: 4%;
+      border-radius: 15%;
+      font-weight: bold;
+      font-size: xx-large;
+      box-shadow: 10px 10px 5px 0px rgba(235,26,235,0.45);
+
     }
     .link {
-      background-color: #bae8e8;
+      background-color: #ffd803;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      font-size: large;
+      border-start-end-radius: 45%;
+      border-end-start-radius: 45%;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      box-shadow: 10px 10px 5px 0px rgba(235,26,235,0.45);
     } 
     .link a {
-      color: #272343;
+      color: #28c4c4;
       text-decoration: none;
+      text-align: center;
+      margin-left: 10px; 
+      flex-grow: 1;
+      font-weight: bold;
+      font-family: 'Roboto Slab', serif;
     }
     .banner-image {
       width: 128px;
       height: 128px;
       object-fit: cover;
       border-radius: 25%;
+      display: flex;
+      justify-content: center;
+      box-shadow: 10px 10px 5px 0px rgba(235,26,235,0.45);
     }
     .thumbnail {
-      width: 48px;
-      height: 48px;
-      border-radius: 48px;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
       object-fit: cover;
     }
   </style>
 </head>
 <body>
-  <div.banner, div.name, div.social-icons, div.links class="items"
+  <div.banner, div.name, div.social-icons, div.links class="items">
   <div class="banner">
-    <img src="/Thumbnails/mantis.jpg" alt="Calvin Armstrong headshot" class="banner-image">
+    <a href="https://homestarrunner.com/sbemails/26-cgnu" target="_blank"><img src="/Thumbnails/mantis.jpg" alt="Calvin Armstrong headshot" class="banner-image"></a>
   </div>
 
-  <div class="name">
-    Calvin Armstrong
+  <div class="name">Calvin Armstrong!
   </div>
 
   <div class="social-icons">
-    <a href="https://github.com/armstrca" target="_blank">
-      GitHub
+    <a href="https://github.com/armstrca" target="_blank"><i class="fa-brands fa-github"></i>
     </a>
 
-    <a href="https://www.instagram.com/calvo_armstrangle/" target="_blank">
-      Instagram
+    <a href="https://www.instagram.com/calvo_armstrangle/" target="_blank"><i class="fa-brands fa-instagram"></i>
     </a>
 
-    <a href="https://www.shedofficial.com" target="_blank">
-      Bandcamp
+    <a href="https://www.shedofficial.com" target="_blank"><i class="fa-brands fa-bandcamp"></i>
     </a>
   </div>
 
@@ -77,14 +122,14 @@
     <img src="/Thumbnails/Dario.jpg" alt="Portrait of Darius De La Cruz" class="thumbnail">
 
     <a target="_blank"
-      href="https://www.dariusdelacruz.com/">My Brother's Professional Acting Website</a>
+      href="https://www.dariusdelacruz.com/">My Brother's Acting Website</a>
   </div>
 
   <div class="link">
     <img
       src="/Thumbnails/logo.png" alt="Logo for the Moscow Philharmonic Hall" class="thumbnail">
 
-    <a target="_blank" href="https://meloman.ru/concert/posvyashenie-andreyu-eshpayu/g">A Little-Known Cello Sonata I Quite Enjoyed, by Andrei Eshpai</a>
+    <a target="_blank" href="https://meloman.ru/concert/posvyashenie-andreyu-eshpayu/g">Concert in Memory of Andrei Eshpai</a>
   </div>
 
   <div class="link">
